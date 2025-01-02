@@ -4,6 +4,9 @@ import CustomCursor from "./CustomCursor";
 import FloatingNav from "./FloatingNav";
 import HeroSection from "./HeroSection";
 import SkillsSection from "./SkillsSection";
+import AboutSection from "./AboutSection";
+import ProjectsSection from "./ProjectsSection";
+import ContactSection from "./ContactSection";
 
 interface HomeProps {
   name?: string;
@@ -43,12 +46,17 @@ const Home = ({
           <HeroSection name={name} title={title} description={description} />
         </section>
 
-        {/* Skills Section */}
-        <section id="skills">
-          <SkillsSection />
-        </section>
+        {/* About Section */}
+        <AboutSection />
 
-        {/* Additional sections can be added here */}
+        {/* Skills Section */}
+        <SkillsSection />
+
+        {/* Projects Section */}
+        <ProjectsSection />
+
+        {/* Contact Section */}
+        <ContactSection />
       </main>
 
       {/* Global light beam effects */}
